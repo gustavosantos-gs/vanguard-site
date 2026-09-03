@@ -58,8 +58,8 @@ p{margin:0 0 1em;max-width:64ch}
 .marca .nome{font-weight:700;font-size:1.12rem;line-height:1.1;letter-spacing:-.01em}
 .marca .nome small{display:block;font-weight:400;font-size:.7rem;color:var(--cinza);letter-spacing:.01em}
 .menu{margin-left:auto;display:flex;gap:24px;align-items:center}
-.menu a{color:var(--tinta);text-decoration:none;font-size:.94rem}
-.menu a:hover{text-decoration:underline}
+.menu a:not(.btn){color:var(--tinta);text-decoration:none;font-size:.94rem}
+.menu a:not(.btn):hover{text-decoration:underline}
 .menu a[aria-current="page"]{box-shadow:inset 0 -2px 0 var(--incendio)}
 @media(max-width:900px){.menu a:not(.btn){display:none}}
 
@@ -144,7 +144,7 @@ p{margin:0 0 1em;max-width:64ch}
 .manutencao .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
 @media(max-width:880px){.manutencao .wrap{grid-template-columns:1fr;gap:34px}}
 .manutencao h2{color:#fff}
-.manutencao p{color:#B7C0C8}
+.manutencao p{color:#B7C0C8;margin-top:.75rem}
 .lista-check{list-style:none;margin:0;padding:0}
 .lista-check li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--linha-escura);font-size:.94rem;color:#CFD6DB}
 .lista-check li:first-child{border-top:1px solid var(--linha-escura)}
