@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Composição de tema de segurança eletrónica">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1E4D"/>
+      <stop offset="0.55" stop-color="#0C2352"/>
+      <stop offset="1" stop-color="#10306A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.36" r="0.62">
+      <stop offset="0" stop-color="#2A5AB4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2A5AB4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#04102B" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="soft2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- bokeh de fundo (luzes desfocadas) -->
+  <g filter="url(#soft)" fill="#7FA8E6">
+    <circle cx="1140" cy="170" r="52" opacity="0.30"/>
+    <circle cx="1320" cy="300" r="34" opacity="0.22"/>
+    <circle cx="1000" cy="120" r="24" opacity="0.26"/>
+    <circle cx="1470" cy="150" r="66" opacity="0.15"/>
+    <circle cx="1255" cy="560" r="44" opacity="0.13"/>
+    <circle cx="1520" cy="470" r="38" opacity="0.17"/>
+    <circle cx="880" cy="240" r="30" opacity="0.16"/>
+  </g>
+  <g filter="url(#soft2)" fill="#CFE0FF">
+    <circle cx="1108" cy="250" r="9" opacity="0.60"/>
+    <circle cx="1292" cy="205" r="5" opacity="0.50"/>
+    <circle cx="1378" cy="392" r="7" opacity="0.42"/>
+    <circle cx="1170" cy="440" r="4" opacity="0.5"/>
+    <circle cx="1476" cy="300" r="6" opacity="0.38"/>
+    <circle cx="980" cy="330" r="4" opacity="0.4"/>
+  </g>
+
+  <!-- cone de visão da câmara -->
+  <path d="M980 452 L560 300 L560 620 Z" fill="#7FA8E6" opacity="0.06"/>
+
+  <!-- câmara CCTV -->
+  <g stroke="#5C82C9" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" opacity="0.9">
+    <!-- placa de parede -->
+    <rect x="1298" y="352" width="26" height="150" rx="9" fill="#0C1E4A"/>
+    <!-- braço -->
+    <path d="M1311 430 L1190 442" stroke-width="16"/>
+    <!-- corpo -->
+    <rect x="1000" y="398" width="196" height="86" rx="34" fill="#0B1C46"/>
+    <!-- pala superior -->
+    <path d="M1016 392 h164 a16 16 0 0 1 16 16 v8 h-196 v-8 a16 16 0 0 1 16 -16 z" fill="#0E2352" stroke="none"/>
+    <!-- lente -->
+    <circle cx="1006" cy="441" r="33" fill="#0A1732"/>
+    <circle cx="1006" cy="441" r="16" fill="#13275A"/>
+    <circle cx="1000" cy="435" r="5" fill="#9FC0F2" stroke="none" opacity="0.8"/>
+    <!-- LEDs IV -->
+    <circle cx="1150" cy="424" r="4" fill="#274a90" stroke="none"/>
+    <circle cx="1166" cy="424" r="4" fill="#274a90" stroke="none"/>
+    <circle cx="1150" cy="458" r="4" fill="#274a90" stroke="none"/>
+    <circle cx="1166" cy="458" r="4" fill="#274a90" stroke="none"/>
+  </g>
+
+  <!-- traços de circuito / rede (canto inferior direito) -->
+  <g stroke="#3E68BE" stroke-width="2.5" fill="none" opacity="0.32">
+    <path d="M1600 690 h-190 v-70 h-120"/>
+    <path d="M1600 610 h-95 v90"/>
+    <path d="M1290 830 h140 v-46 h210"/>
+    <path d="M1180 900 v-70 h120"/>
+  </g>
+  <g fill="#6C93D8" opacity="0.42">
+    <circle cx="1290" cy="620" r="5"/>
+    <circle cx="1505" cy="700" r="5"/>
+    <circle cx="1430" cy="784" r="5"/>
+    <circle cx="1300" cy="830" r="5"/>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+</svg>
